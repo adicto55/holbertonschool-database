@@ -1,6 +1,7 @@
--- Creates a table called users
+-- Creates a table users with id, email, and name attributes.
+-- Creates the table users if it does not already exist
 CREATE TABLE IF NOT EXISTS users (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     name VARCHAR(255)
 );
