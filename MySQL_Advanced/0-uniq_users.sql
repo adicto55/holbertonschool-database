@@ -1,7 +1,7 @@
--- Creates a table users with id, email, and name attributes.
--- Creates the table users if it does not already exist
-CREATE TABLE IF NOT EXISTS users (
-    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    name VARCHAR(255)
+-- creates a table <users>. if it already exists, does not fail.
+-- can be executed on any database
+CREATE TABLE if NOT EXISTS users (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	email VARCHAR(255) NOT NULL UNIQUE,
+	name VARCHAR(255)
 );
